@@ -50,11 +50,11 @@ public class decission_making {
     
 //If Statement
     
-   int a = 5, b = 7;
+   int a = 5; b = 7;
    if ( a > b)
-     System.out.printlin("a > b");
+     System.out.printlin("a lebih besar daripada b");
    if (a < b)
-     System.out.println("b > a")
+     System.out.println("b lebih besar daripada a");
      
    }
      
@@ -69,10 +69,10 @@ public class decission_making {
                  System.out.println("Tuesday"); 
                  break;
          case 3 : 
-                 System.out.printlin("Wednesday"); 
+                 System.out.println("Wednesday"); 
                  break;
        default : 
-                 System.out.printlin("Invalid Month")
+                 System.out.println("Invalid Month");
                  
        }
        
