@@ -1,0 +1,112 @@
+package decission_making;
+import java.util.Scanner;
+
+public class decission_making {
+
+    public static void main(String[] args) {
+      
+       Scanner input = new Scanner (System.in);
+       
+ //If Else         
+    
+    String nama;
+    int nilai;
+    char score;
+    
+    System.out.print("Masukkan nama : ");
+    nama = input.next();
+    System.out.print("Masukkan nilai: ");
+    nilai = input.nextInt();
+    
+    if (nilai >= 80){
+        score = 'A';
+    }else if (nilai >= 70){
+        score = 'B';        
+    }else if (nilai >= 60){
+        score = 'C';
+    }else if (nilai >= 50){
+        score = 'D';
+    }else{
+        score = 'E';
+    }
+    
+    if (score=='A'){
+        System.out.println("Selamat, "+nama );
+           System.out.println("Nilai Anda A !");
+    }else if (score=='B'){
+        System.out.println("Bagus, "+nama );
+        System.out.println("Nilai Anda B");
+    }else if (score=='C'){
+        System.out.println("Lumayan, "+nama );
+        System.out.println("Nilai Anda C");
+    }else if (score=='D'){
+        System.out.println("Maaf, "+nama );
+        System.out.println("Nilai Anda D, Tidak Lulus");
+    }else {
+        System.out.println("Maaf, "+nama );
+        System.out.println("Nilai Anda E, Tidak Lulus");
+    }
+    
+    
+//If Statement
+    
+   int a = 5, b = 7;
+   if ( a > b)
+     System.out.printlin("a > b");
+   if (a < b)
+     System.out.println("b > a")
+     
+   }
+     
+//Switch
+   
+   int month = in.nextInt ();
+   switch (day) {
+         case 1 : 
+                 System.out.printin("Monday"); 
+                 break;
+         case 2 : 
+                 System.out.println("Tuesday"); 
+                 break;
+         case 3 : 
+                 System.out.printlin("Wednesday"); 
+                 break;
+       default : 
+                 System.out.printlin("Invalid Month")
+                 
+       }
+       
+//Nested Statement
+       
+        int belanjaan, diskon, bayar;
+        String kartu_ATM;
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.print("Apakah Anda Memiliki Kartu Member : ");
+        kartu_ATM = scan.nextLine();
+        System.out.print("Total Belanjaan : ");
+        belanjaan = scan.nextInt();
+        
+       if (kartu_ATM.equalsIgnoreCase("ya")){
+            if(belanjaan > 1000000){
+                diskon = 200000;
+            } else if (belanjaan > 100000){
+                diskon = 20000;
+            } else {
+                diskon = 0;
+            }
+       } else {
+           if (belanjaan > 100000){
+               diskon = 20000;
+            } else {
+               diskon = 0;
+            }
+        }
+       
+       bayar = belanjaan - diskon;
+       
+       System.out.println("Total bayar : Rp " + bayar);
+      
+      }
+  }
+}
